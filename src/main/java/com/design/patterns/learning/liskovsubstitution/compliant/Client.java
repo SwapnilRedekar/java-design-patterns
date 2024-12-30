@@ -19,8 +19,8 @@ public class Client {
      * This is compliant with Liskov Substitution Principle. This method consumes both Rectangle and Square objects.
      */
     private static void useShape(Shape shape) {
-        if (shape instanceof Rectangle) {
-            Rectangle rectangle = (Rectangle) shape;
+
+        if (shape instanceof Rectangle rectangle) {
             rectangle.setHeight(10);
             rectangle.setWidth(20);
 
@@ -35,8 +35,7 @@ public class Client {
             } else {
                 System.out.println("Width is equal to 20");
             }
-        } else if (shape instanceof Square) {
-            Square square = (Square) shape;
+        } else if (shape instanceof Square square) {
             square.setSide(10);
 
             if (square.getSide() != 10) {
