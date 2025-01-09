@@ -1,7 +1,5 @@
 package com.design.patterns.learning.designpattern.bridge;
 
-import ch.qos.logback.core.subst.Node;
-
 public class SingleLinkedList<T> implements LinkedList<T> {
 
     private class Node {
